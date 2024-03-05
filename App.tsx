@@ -1,8 +1,14 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+
+import MainNavigation from './navigation/MainNavigation';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App: React.FC = () => {
-  return <SafeAreaView />;
+  return (
+    <NavigationContainer>
+      <MainNavigation />
+    </NavigationContainer>
+  );
 };
 
 export default App;
